@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Jeux1</title>
+</head>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <body>
+        <nav>
+            <div class="navicon">
+                <div></div>
+            </div>
+            <a href="Accueil.html">Accueil</a>
+            <a href="html.html">Jeu 1</a>
+            <a href="Question1.html">Jeu 2</a>
+
+        </nav>
+        <script>
+            import 'animate.css';
+        </script>
+    <script>
+        Swal.fire({
+            background:'#c29ca2',
+            icon: 'Qui est-ce ?',
+            title: 'Qui est-ce ?',
+            text: 'Trouvez les bonnes personnes dans la foules',
+            footer: "<a id='good' href='ttps://www.youtube.com/watch?v=dQw4w9WgXcQ'>Un peu d'aide</a>",
+            confirmButtonText: '<a> Bonne chance </a>'
+        })
+    </script>
+    <div class="box">
+        <div class="container">
+            <button id="test1"><img class="photo" id="homme1" src="/photo/Fille.png"><img class="photo" id="croix1" src="/photo/croixfemme.png"></button>
+            <button id="test2"><img class="photo" id="homme2" src="/photo/Garçon.png"><img class="photo" id="croix2" src="/photo/croixhomme.png"></button>
+            <button id="test4" onclick="correct1()"><img class="photo" id="homme4" src="/photo/Fille.png"></button>
+            <button id="test3"><img class="photo" id="homme3" src="/photo/Garçon.png"><img class="photo" id="croix3" src="/photo/croixhomme.png"></button>
+        </div>
+        <div class="container">
+            <button id="test5"><img class="photo" id="homme5" src="/photo/Garçon.png"><img class="photo" id="croix5" src="/photo/croixhomme.png"></button>
+            <button id="test12" onclick="correct2()"><img class="photo" id="homme12" src="/photo/Garçon.png"></button>
+            <button id="test6"><img class="photo" id="homme6" src="/photo/Garçon.png"><img class="photo" id="croix6" src="/photo/croixhomme.png"></button>
+            <button id="test7"><img class="photo" id="homme7" src="/photo/Fille.png"><img class="photo" id="croix7" src="/photo/croixfemme.png"></button>
+        </div>
+        <div class="container">
+            <button id="test8"><img class="photo" id="homme8" src="/photo/Fille.png"><img class="photo" id="croix8" src="/photo/croixfemme.png"></button>
+            <button id="test10"><img class="photo" id="homme10" src="photo/Fille.png"><img class="photo" id="croix10" src="/photo/croixfemme.png"></button>
+            <button id="test9"><img class="photo" id="homme9" src="/photo/Garçon.png"><img class="photo" id="croix9" src="/photo/croixhomme.png"></button>
+            <button id="test11" onclick="correct3()"><img class="photo" id="homme11" src="/photo/Garçon.png"></button>
+        </div>
+    </div>
+    <script>function correct1(){
+        Swal.fire({
+        background:'#c29ca2',
+        title:'VIH',
+        text:"SIDA signifie Syndrome d'Immuno Déficience Acquise Au fil du temps et en l'absence de traitement efficace, les cellules coordonnant l'immunité peuvent devenir de moins en moins nombreuses et l'immunité risque d'être moins efficace. Des maladies de plus en plus graves risquent alors se développer. Certaines maladies sont appelées maladies opportunistes parce qu'elles profitent de la diminution de l'immunité pour se développer. Lorsqu'une personne a une ou plusieurs maladies de ce type, on dit qu'elle a le SIDA. Pour plus d'information visitez : https://www.sida-info-service.org/que-signifie-vih-sida/",
+        icon:'success'}
+        );
+    }</script>
+    <script>function correct2(){
+        Swal.fire({
+        background:'#c29ca2',
+        title:'Chlamydiae',
+        text:"L’infection à Chlamydia Trachomatis, due à une bactérie, est extrêmement répandue, en particulier chez les moins de 25 ans. Elle peut se développer en l’absence de tout symptôme. Elle touche les hommes comme les femmes et peut entraîner de graves complications. C’est l’une des premières causes de stérilité en France. Son diagnostic est souvent tardif et survient parfois au-delà du délai d’incubation. Pour plus d'information visitez : https://www.sida-info-service.org/chlamydia-chlamidiose-chlamydiae/",
+        icon:'success'
+        }
+        );
+    }</script>
+    <script>function correct3(){
+        Swal.fire({
+        background:'#c29ca2',
+        title:'Syphilis',
+        text:"Maladie vénérienne emblématique, la syphilis, ou « vérole », est une infection bactérienne (Treponema Pallidum ou tréponème pâle) très ancienne, responsable de lésions de la peau et des muqueuses pouvant toucher de nombreux organes. Ramenée d’Amérique du Sud par l’équipage de Christophe Colomb, la vérole se répand en Europe à l’occasion du siège de Naples par Charles VIII (1494).Il ne faut pas confondre avec la petite vérole qui désignait la variole. Pour plus d'information visitez : https://www.sida-info-service.org/la-syphilis-cest-quoi/",
+        icon:'success'}
+        );
+    }</script>
+    <script src="js.js"></script>
+    <footer>
+        <a>© 2022 El Ratos Del 69</a> </br>
+        <a>|------|</a>
+        <a id="ml" href="ml.html">Mentions Légales</a>
+    </footer>
+</body>
+</html>
